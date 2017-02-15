@@ -98,7 +98,7 @@ string Fifo::recv() {
 
     // -1 means something isn't working
     if (bytes ==-1) {
-      cout << "Error - bad read on input pipe: " << pipename << endl;
+      cout << "Error - bad read on input pipe- " << pipename << endl;
       return("");
     }
     // check if nothing was read
@@ -133,7 +133,7 @@ void Fifo::send(string message) {
   message = message + MESSTERM;
   bytes = write(fd, message.c_str(),message.length());
   if (bytes ==-1) {
-    cout << "Error - bad write on output pipe: " << pipename << endl;
+    cout << "Error - bad write on output pipe- " << pipename << endl;
     return;
   }
     if (bytes == 0) {

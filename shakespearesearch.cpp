@@ -89,7 +89,7 @@ vector <int> indexSearch(string word) {
     /* find the word and get the vector of references */
     /* First use find, so as to NOT create a new entry */
     it = refs.find(word);
-    //if else statement in case there aren't any matches for the word
+    //return blank vector if there aren't any matches for the word
     if (it == refs.end()) {
         return (blank);
     } else {

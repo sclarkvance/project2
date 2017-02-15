@@ -1,3 +1,8 @@
+// Always remember to include an imformative heading
+// This helps people understand what's happening
+// Author Name
+// Date
+
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
